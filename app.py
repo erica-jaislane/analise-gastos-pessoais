@@ -44,7 +44,6 @@ CAMINHO_CSV = os.path.join(os.path.dirname(__file__), 'dados', 'gastos.csv')
 
 # Usamos cache do Streamlit para não recarregar o CSV toda vez
 # que o usuário interage com um filtro.
-@st.cache_data
 def carregar():
     return preparar_dados(CAMINHO_CSV)
 
